@@ -32,7 +32,7 @@ COMMON_C_LINKS = $(COMMON_DIRECT_C_LINKS) $(COMMON_BASE_C_LINKS)
 COMMON_DIRECT_LINKS= $(COMMON_DIRECT_C_LINKS) yportenv.h yaffs_hweight.h yaffs_list.h
 COMMONOBJS = $(COMMON_C_LINKS:.c=.o)
 
-MKYAFFSSOURCES = mkyaffsimage.c
+MKYAFFSSOURCES = mkyaffsimage.c yaffs_packedtags1.c nand-ecc.c
 MKYAFFSIMAGEOBJS = $(MKYAFFSSOURCES:.c=.o)
 
 MKYAFFS2SOURCES = mkyaffs2image.c
